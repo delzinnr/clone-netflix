@@ -1,0 +1,151 @@
+:root{
+  --red: #e50914;
+  --black: #141414;
+  --white: #ffffff;
+  --gray: #AAA;
+}
+
+.container {
+  padding-right: 51px;
+  padding-left: 51px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--black);
+  font-family: 'Arial', Times, serif;
+  color: white;
+}
+
+header .container {
+  display: flex;
+  align-items: center;
+  height: 68px;
+  justify-content: space-between;
+}
+
+header .menu{
+  align-items: center;
+}
+
+header .logo{
+  color: var(--red);
+  font-family: 'Arial Black', Times, serif;
+  font-size: 25px;
+  margin-left: 16px;
+}
+
+header .menu {
+  display: flex;
+}
+
+header .sub-menu{
+  display: flex;
+  align-items: center;
+}
+
+header nav a{
+  text-decoration: none;
+  color: var(--white);
+  margin-right: 10px;
+  font-size: 14px;
+}
+
+header nav a:hover{
+  color: var(--gray);
+}
+
+header nav {
+  padding-left: 30px;
+}
+
+header .sub-menu p,
+header .sub-menu i{
+  margin:0 10px;
+}
+
+header  img{
+  height: 32px;
+  width: 32px;
+  border-radius: 5px;
+}
+
+.principal-movie {
+  font-size: 20px;
+  background: linear-gradient(rgba(0,0,0,.50),rgb(20, 20, 20)), url(/img/capa.jpg) no-repeat;
+  position: absolute;
+
+  height: 700px;
+  background-size: cover;
+
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.principal-movie .container{
+  width: 50%;
+}
+
+.principal-movie .description{
+  margin-bottom: 90px;
+  margin-top: 10px;
+}
+
+.principal-movie .title {
+  margin-top: -10%;
+  font-size: 50px;
+  font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+.button {
+  background-color: rgba(0,0,0,.50);
+  border: none;
+  color: white;
+
+  padding: 1rem 2rem;
+  margin-right: 15px;
+  font-size: 12px;
+
+  cursor: pointer;
+  transition: .5s ease all;
+}
+
+.button:hover{
+  background-color: white;
+  color: black;
+}
+
+.button i{
+  margin-right: 8px;
+}
+
+.box-movie{
+  height: 117px;
+  width: 200px;
+  border-radius: 5px;
+}
+
+ .container:nth-child(3),
+ .container:nth-child(4){
+  padding-right: 0px;
+}
+
+.carrosel-movies {
+  margin-top: 5px;
+  position: relative;
+
+  top: 540px; 
+}
+
+.carrosel-movies p{
+  margin-bottom: 16px;
+  font-size: 14px;
+}
